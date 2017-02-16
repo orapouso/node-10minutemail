@@ -1,6 +1,6 @@
 {
   "name": "10minutemail",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "10 minute mail api",
   "main": "index.js",
   "scripts": {

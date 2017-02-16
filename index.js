@@ -18,6 +18,14 @@ function create({timeout:timeout=10000, startup: startup=true}={}) {
     clearTimeout(countTimer)
   }
   
+  ev.reset = () => {
+    return reqCommon('https://10minutemail.com/10MinuteMail/resources/session/reset', 'reset')
+  }
+  
+  ev.secondsLeft = () => {
+    return reqCommon('https://10minutemail.com/10MinuteMail/resources/session/secondsLeft', 'secondsLeft')
+  }
+  
   request('https://10minutemail.com/10MinuteMail/index.html', (err) => {
     if (err) { debug('ERR', err) }
         

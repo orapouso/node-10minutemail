@@ -11,3 +11,6 @@ mail.on('mail', (mails) => {
 })
 
 
+setTimeout(() => mail.secondsLeft().then((seconds) => console.log('left:', seconds)), 5000)
+setTimeout(() => mail.reset().then(() => console.log('reseted')), 8000)
+setTimeout(() => mail.secondsLeft().then((seconds) => console.log('left:', seconds)), 10000)

@@ -1,6 +1,6 @@
 # 10minutemail Node API
 
-API to create and retrieve mail from [10minutemail](10minutemail.com)
+API to create and retrieve mail from [10minutemail](https://10minutemail.com)
 
 ```
 npm install 10minutemail
@@ -20,7 +20,7 @@ mail.on('count', (count) => console.log(count)
 
 ## API
 
-The factory returns an EventEmitter that emmits 3 events whenever they happen
+The factory returns an EventEmitter that emits 3 events whenever they happen
 
 #### `var mail = minutemail([options])`
 
@@ -39,7 +39,7 @@ Options include:
 
 ##### `mail.address`
 
-Holds the email address retrieved from 10minutemail.com. This is an asyncronous fetch, so it may no be readly available. Listen for the `address` event.
+Holds the email address retrieved from 10minutemail.com. This is an asynchronous fetch, so it may not be readily available. Listen for the `address` event.
 
 ### Methods
 
@@ -55,12 +55,12 @@ Stops fetching emails and counts
 
 #### `mail.on('address')`
 
-Emmited when the email address is retrieved. After it retrieves, the address is stored in the EventEmitter and accessed as `mail.address`
+Emitted when the email address is retrieved. After it retrieves, the address is stored in the EventEmitter and accessed as `mail.address`
 
 #### `mail.on('mail')`
 
-Emmited when there are any emails in the inbox
+Emitted when there are any emails in the inbox
 
 #### `mail.on('count')`
 
-Emmited when for every count request, event if it is 0
+Emitted when for every count request, event if it is 0

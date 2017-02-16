@@ -1,0 +1,28 @@
+{
+  "name": "10minutemail",
+  "version": "0.1.0",
+  "description": "10 minute mail api",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/orapouso/node-10minutemail.git"
+  },
+  "keywords": [
+    "10minutemail",
+    "api"
+  ],
+  "author": "Rafael Raposo <orapouso@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/orapouso/node-10minutemail/issues"
+  },
+  "homepage": "https://github.com/orapouso/node-10minutemail#readme",
+  "dependencies": {
+    "debug": "^2.6.1",
+    "request": "^2.79.0"
+  }
+}
